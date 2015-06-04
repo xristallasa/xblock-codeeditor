@@ -1,0 +1,26 @@
+/* CSS for CodeeditorXBlock */
+
+.codeeditor_block .count {
+    font-weight: bold;
+}
+
+.codeeditor_block p {
+    cursor: pointer;
+}
+ #myDiv {
+  border: 1px dashed #ccc;
+  padding: 20px;
+}
+  
+  hr.hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7e8;
+  padding: 0;
+  width: 100%;
+}
+
+.light {
+  color: #9ca3a8;
+}
