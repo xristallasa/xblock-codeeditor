@@ -1,5 +1,5 @@
 <div class="codeeditor_block">
-
+<div class="container">
 <div id="progr_langs">
                     <select name="lang" id="lang" onchange="view_sample();">
                         <option value="C" selected="selected">C</option>
@@ -14,43 +14,29 @@
                         <option value="PHP">PHP</option>
                         <option value="PYTHON">Python</option>
                         <option value="RUBY">Ruby</option>
-                         <option value="HTML">Html</option>
-                          <option value="CSS">Css</option>
+                        <option value="HTML">Html</option>
+                        <option value="CSS">Css</option>
                      </select>
  </div>
 <form >
-    <div style="height: 500px; width: 500px;" id="code"></div> 
-    <br><br>
-    <input type="button" value="Compile and Run" onclick="code_editor();">
+   <div style="height: 500px; width: 600px;" id="code"></div> 
+    <input type="button" class="compile_button" value="Compile and Run" onclick="code_editor();">
 
 </form> 
+            </div>
+            <br>
 
-
-<!-- editor-container -->
-        <div  id="input_value" class="test-input-check medium-margin">
-            <input name="test-input-checkbox" id="test-input-checkbox" type="checkbox">
-            <span class="test-input-checkbox-text body-font light">Use custom input for testing your code</span>
-            <div class="test-input-container medium-margin hidden">
-                <textarea id="test-input" class="nice-textarea">
-                </textarea> </div>
-		</div>
-		<div id="loader"> </div>
-            
-
-<div id="myDiv" style="display:none;">
-    <label >Compilation Log</label>
-    <div id="error_msg"> </div>
-    <hr class="hr">
+<div id="myDiv">
+     <div id="loader"> </div>
+     <div id="compile_result" style="display:none;">
+        <label >Compilation Log</label>
+        <div id="error_msg" class="error_msg"> </div>
+        <hr class="hr">
     
-    <label >Output </label>
-    <br>
-    <div id="output">  </div>
-    <hr class="hr">
-    
-    <label >Input </label>
-    <br>
-    <div id="input" class="light">  Standard input is empty </div>
-
+        <label >Output </label>
+        <br>
+        <div id="output">  </div>
+    </div>
 </div>
 </p>
 

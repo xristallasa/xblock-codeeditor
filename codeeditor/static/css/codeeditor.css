@@ -10,6 +10,8 @@
  #myDiv {
   border: 1px dashed #ccc;
   padding: 20px;
+  height:135px;
+  
 }
   
   hr.hr {
@@ -23,4 +25,37 @@
 
 .light {
   color: #9ca3a8;
+}
+#img_loader {
+    position: relative;
+    right: -529px;
+}
+
+.error_msgcomplile_error{
+    background-color: #e67676;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+
+.container {
+    background-color: #f1f1f1;
+    bottom: 0;
+    height: auto;
+    min-height: 250px;
+    min-width: 602px;
+    overflow: auto;
+    top: 100px;
+    width: 221px;
+}
+.compile_button {
+    background-color: #0099fd;
+    color: snow;
+    font-family: arial;
+    font-size: unset;
+    position: relative;
+    right: -455px;
 }

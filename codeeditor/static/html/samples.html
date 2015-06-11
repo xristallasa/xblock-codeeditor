@@ -1,13 +1,15 @@
 
-
-<div id="C-sample" style="display: none">
-
-
+<script id="C-sample" type="text/template">
 #include <stdio.h>
+int main()
+{
+    printf("Hello World!\n");
+    return 0;
+}
 
 
+</script>
 
-</div>
 <script id="CPP-sample" type="text/template">
 #include <iostream>
 using namespace std;
@@ -19,30 +21,24 @@ int main()
 }
 </script>
 
-<div id="CPP11-sample" style="display: none">
-using System; 
-class MyClass {
-    static void Main(string[] args) {
-        /*
-         * Read input from stdin and provide input before running
-        var line1 = System.Console.ReadLine().Trim();
-        var N = Int32.Parse(line1);
-        for (var i = 0; i < N; i++) {
-            System.Console.WriteLine("hello world");
-        }
-        */
+<script id="CPP11-sample" type="text/template">
+#include <iostream>
+using namespace std;
 
-        System.Console.WriteLine("Hello World!\n");
-    }
+int main()
+{
+    cout << "Hello World!" << endl;
+    return 0;
 }
-</div>
 
-<div id="CLOJURE-sample" style="display: none">
+</script>
+
+<script id="CLOJURE-sample" type="text/template">
 (println "Hello, World")
 
-</div>
+</script>
 
-<div id="CSHARP-sample" style="display: none">
+<script id="CSHARP-sample" type="text/template">
 using System; 
 class MyClass {
     static void Main(string[] args) {
@@ -59,9 +55,10 @@ class MyClass {
     }
 }
 
-</div>
+</script>
 
-<div id="JAVA-sample" style="display: none">
+
+<script id="JAVA-sample" type="text/template">
 /* IMPORTANT: class must not be public. */
 
 /*
@@ -87,21 +84,24 @@ class TestClass {
     }
 }
 
-</div>
+</script>
 
-<div id="JAVASCRIPT-sample" style="display: none">
+
+<script id="JAVASCRIPT-sample" type="text/template">
 print ('Hello World!\n');
 
-</div>
-<div id="HASKELL-sample" style="display: none">
+</script>
+
+
+<script id="HASKELL-sample" type="text/template">
 module Main
   where
 
 main=putStrLn "Hello, World!\n"
 
-</div>
+</script>
 
-<div id="PERL-sample" style="display: none">
+<script id="PERL-sample" type="text/template">
 use strict;
 
 =comment
@@ -115,9 +115,10 @@ while(my $fred = <STDIN>) {
 
 print 'Hello World!'
 
-</div>
+</script>
 
-<div id="PHP-sample" style="display: none">
+
+<script id="PHP-sample" type="text/template">
 <?php
 
 /*
@@ -133,9 +134,9 @@ echo "Hello World!";
 
 ?>
 
-</div>
+</script>
 
-<div id="PYTHON-sample-sample" style="display: none">
+<script id="PYTHON-sample" type="text/template">
 '''
 # Read input from stdin and provide input before running code
 
@@ -143,9 +144,9 @@ name = raw_input('What is your name?\n')
 print 'Hi, %s.' % name
 '''
 print 'Hello World!'
-</div>
+</script>
 
-<div id="RUBY-sample-sample" style="display: none">
+<script id="RUBY-sample" type="text/template">
 =begin
 # Read input from stdin and provide input before running code
 
@@ -156,7 +157,7 @@ print "Hi #{name}\n"
 
 print 'Hello World!'
 
-</div>
+</script>
 
 <script id="HTML-sample" type="text/template">
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -168,9 +169,16 @@ print 'Hello World!'
 </html>
 </script>
 
-<div id="CSS-sample" style="display: none">
+
+<script id="CSS-sample" type="text/template">
 p {
     font-size: 13px;
     line-height: 19px;
 }
-</div>
+</script>
+
+<script id="error_msg_" type="text/template">
+{
+
+}
+</script>
